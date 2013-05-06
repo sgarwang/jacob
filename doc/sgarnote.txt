@@ -1,0 +1,91 @@
+1.  Overview
+2.  Todo
+3.  Setup
+  .1  Code base:
+    - https://github.com/sgarwang/refinerycms-bootstrap
+  .2  RVM:
+    - rvm install 1.9.3
+    - rvm use 1.9.3
+    - rails new issac
+    - http://railsapps.github.io/openssl-certificate-verify-failed.html
+      * rvm -v                                  ; rvm 1.19.6
+      * rvm osx-ssl-certs status all            ; Old
+      * sudo rvm osx-ssl-certs cron install     ; Automatic certs updating installed.
+      * rvm osx-ssl-certs update                ; __rvm_try_sudo: command not found
+        - brew update
+        - brew install openssl
+        $ brew link openssl --force
+        $ brew install curl-ca-bundle           ; Not fixed
+        => Vim line 40 and use 'sudo'           ; Updated...
+  .3  Issac / Git
+    - References:
+      * https://help.github.com/articles/generating-ssh-keys
+        - Learn to setup your SSH access
+      * https://help.github.com/articles/using-ssh-over-the-https-port
+        - ssh -T -p 443 git@ssh.github.com
+        - vim ~/.ssh/config
+        - ssh -T git@github.com
+    (1) setup SSH access
+    (2) create a git on github
+    (3) git clone git@github.com:sgarwang/issac.git
+    (4) edit and you can push
+
+  .4 Refinarycms:
+    - References:
+      * http://refinerycms.com/guides/getting-started
+        (1) gem install refinerycms
+        (2) rvm -v; ruby -v                 ; 1.9.3
+        (3) rails new jacob -m http://refinerycms.com/t/2.0.0
+        (4) cd jacob
+        (5) bundle exec rails s
+        (6) http://localhost:3000
+        (7) default account: sgarwang / sgarwang@gmail.com / same_old_with_5
+        (8) Customize company name
+        (9) Customize design
+    - First
+      * http://railscasts.com/episodes/332-refinery-cms-basics?view=asciicast
+    - UI
+      * https://github.com/ghoppe/refinerycms-bootstrap/issues/1
+      * https://gist.github.com/simi/1759949
+    - Deploy
+      * http://www.bluehostforum.com/showthread.php?2907-Deploying-rails-apps-with-capistrano
+      * https://my.bluehost.com/cgi/help/rails
+      * http://vasil-y.com/2012/08/21/rails-capistrano-git-bluehost/
+    - Upgrades:
+      * http://refinerycms.com/guides/upgrading-to-the-latest-stable-version
+    - Device:
+      * http://refinerycms.com/guides/with-an-existing-rails-31-devise-app
+    - Existing Rails
+      * http://refinerycms.com/guides/with-an-existing-rails-app
+    - More
+      * http://refinerycms.com/guides
+        
+  .8 Plans:
+    - CRM:
+      * http://www.tomordonez.com/blog/2012/08/07/fatfreecrm-ruby-on-rails-crm-installation-and-deployment-to-heroku-cloud-service/
+      
+    - Social:
+      * http://communityengine.org/
+    
+  .x Extensions:
+    - Why Ruby:
+      * http://www.codinghorror.com/blog/2013/03/why-ruby.html
+    - Why FFCRM:
+      * Bootstrap twitter: 
+        - https://groups.google.com/forum/?fromgroups=#!topic/fat-free-crm-dev/oQWaocEe8RQ
+        
+    - Why SugarCRM:
+      * Bootstrap, but its PHP
+    - RailsCRM:
+      * https://github.com/brobertsaz/railscrm-advanced
+    
+    - Mindset:
+      * http://www.mobile01.com/topicdetail.php?f=482&t=162459&p=1
+    - Bootstrap:
+      * http://www.webdistortion.com/2012/11/06/resources-twitter-bootstrap/
+      * https://github.com/davidber/twitter-bootstrap-sample-page-layouts
+    - http://www.webresourcesdepot.com/23-amazing-and-open-source-ruby-on-rails-applications/
+      * 
+      
+    
+      
